@@ -163,7 +163,7 @@ Additionally, the histogram exhibits a long-tail effect, with the maximum value 
 
 ## 3.	Top 10 industries of margins of Supply Chain Emission Factors
 
-```{python, echo=FALSE,fig.pos='H', fig.align='center'}
+```{python, echo=FALSE,message=FALSE, warning=FALSE,fig.pos='H', fig.align='center'}
 df["Margins Percentage"] = (df.iloc[:, 5] / df.iloc[:, 6]) * 100
 df_top_margins = df.sort_values(by="Margins Percentage", ascending=False).head(10)
 plt.figure(figsize=(5, 5))
@@ -205,7 +205,7 @@ The overall conclusion is that the core source of supply chain emissions still l
 
 ## 5.	Comparison of Emissions of and Without Margins
 
-```{python, echo=FALSE,fig.pos='H'}
+```{python, echo=FALSE,message=FALSE, warning=FALSE,fig.pos='H'}
 plt.figure(figsize=(12, 5))
 sns.scatterplot(
     x=df["Supply.Chain.Emission.Factors.without.Margins"], 

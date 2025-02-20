@@ -181,7 +181,7 @@ The top 10 industries mainly revolve around apparel, tools, and garden machinery
 
 ## 4.	Comparison of Emissions with and Without Margins
 
-```{python, echo=FALSE,fig.pos='H'}
+```{python, echo=FALSE, message=FALSE, warning=FALSE, fig.pos='H'}
 plt.figure(figsize=(12, 5))
 sns.scatterplot(
     x=df["Supply.Chain.Emission.Factors.without.Margins"], 
